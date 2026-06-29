@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # Ollama - Yerel LLM Sunucusu
+  ollama:
+    image: ollama/ollama:latest
+    container_name: teknofest-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: all
+#              capabilities: [gpu]
+    restart: unless-stopped
+
+  # Ana Uygulama
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: teknofest-app
+    ports:
+      - "8501:8501"   # Streamlit Dashboard
+      - "8000:8000"   # FastAPI
+    volumes:
+      - ./data:/app/data
+      - ./ontology:/app/ontology
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - PYTHONPATH=/app
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

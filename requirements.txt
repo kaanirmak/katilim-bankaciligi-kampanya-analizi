@@ -1,0 +1,50 @@
+# ============================================
+# TEKNOFEST 2026 - Yapay Zeka Dil Ajanları
+# Bağımlılıklar (Tümü Açık Kaynak)
+# ============================================
+
+# --- Web Scraping ---
+beautifulsoup4>=4.12.0
+scrapy>=2.11.0
+selenium>=4.20.0
+requests>=2.31.0
+lxml>=5.2.0
+
+# --- Veri İşleme ---
+pandas>=2.2.0
+numpy>=1.26.0
+
+# --- NLP & Metin İşleme ---
+spacy>=3.7.0
+transformers>=4.40.0
+torch>=2.2.0
+sentence-transformers>=3.0.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+
+# --- Yerel LLM Entegrasyonu ---
+ollama>=0.3.0
+
+# --- Vektör Veritabanı ---
+chromadb>=0.5.0
+faiss-cpu>=1.8.0
+
+# --- Web Arayüzü ---
+streamlit>=1.35.0
+gradio>=4.30.0
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# --- Veritabanı ---
+sqlalchemy>=2.0.0
+
+# --- Test ---
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+
+# --- Yardımcı ---
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+loguru>=0.7.0
+tqdm>=4.66.0
+rich>=13.7.0

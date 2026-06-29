@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "description": "Katılım Bankacılığı Terminoloji Sözlüğü",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
+    "source": "TEKNOFEST 2026 Yapay Zeka Dil Ajanları Yarışması Şartnamesi"
+  },
+  "terminology_mapping": [
+    {
+      "conventional_term": "Faiz Oranı",
+      "participation_term": "Kâr Payı Oranı",
+      "technical_description": "Finansman işlemine konu olan mal/hizmet üzerinden oluşan ve faiz içermeyen oran yükü.",
+      "aliases": ["faiz", "faiz orani", "interest rate"],
+      "category": "oran"
+    },
+    {
+      "conventional_term": "Kredi",
+      "participation_term": "Finansman",
+      "technical_description": "Müşterinin ihtiyaç duyduğu mal veya hizmetin banka aracılığıyla satın alınması süreci.",
+      "aliases": ["kredi", "credit", "loan", "borç"],
+      "category": "urun"
+    },
+    {
+      "conventional_term": "Kredi Maliyeti",
+      "participation_term": "Finansman Maliyeti",
+      "technical_description": "Toplam geri ödeme tutarı ve müşterinin katlandığı net maliyet yapısı.",
+      "aliases": ["kredi maliyeti", "toplam maliyet", "geri ödeme tutarı"],
+      "category": "maliyet"
+    },
+    {
+      "conventional_term": "Vadeli Hesap",
+      "participation_term": "Katılım Fonu",
+      "technical_description": "Kâr-zarar ortaklığına dayanan, fon sahipleri ile banka arasında paylaşılan hesap türü.",
+      "aliases": ["vadeli hesap", "vadeli mevduat", "mevduat hesabı"],
+      "category": "hesap"
+    },
+    {
+      "conventional_term": "Faizsiz Kredi",
+      "participation_term": "Masrafsız Finansman",
+      "technical_description": "Tahsis ücreti, dosya masrafı veya ek komisyon barındırmayan finansman ürünleri.",
+      "aliases": ["faizsiz kredi", "masrafsız kredi", "ücretsiz kredi", "sıfır faizli"],
+      "category": "urun"
+    },
+    {
+      "conventional_term": "Kampanyalı Kredi",
+      "participation_term": "Avantajlı Finansman",
+      "technical_description": "Standart koşullara kıyasla daha düşük kâr payı veya ek ödül sunan yapılar.",
+      "aliases": ["kampanyalı kredi", "indirimli kredi", "özel fırsatlı"],
+      "category": "kampanya"
+    }
+  ],
+  "campaign_categories": [
+    {
+      "id": "ihtiyac_finansmani",
+      "name": "İhtiyaç Finansmanı Kampanyası",
+      "keywords": ["ihtiyaç", "bireysel finansman", "tüketici", "ihtiyaç kredisi"],
+      "description": "Bireylerin genel ihtiyaçları için sunulan finansman ürünleri."
+    },
+    {
+      "id": "konut_finansmani",
+      "name": "Konut Finansmanı Kampanyası",
+      "keywords": ["konut", "ev", "mortgage", "emlak", "gayrimenkul", "konut kredisi"],
+      "description": "Konut alımı veya yenileme amaçlı finansman ürünleri."
+    },
+    {
+      "id": "tasit_finansmani",
+      "name": "Taşıt Finansmanı Kampanyası",
+      "keywords": ["taşıt", "araç", "otomobil", "araba", "araç kredisi", "taşıt kredisi"],
+      "description": "Araç alımı amaçlı finansman ürünleri."
+    },
+    {
+      "id": "alisveris_puan_kart",
+      "name": "Alışveriş Puanı / Kart Kampanyası",
+      "keywords": ["puan", "kart", "cashback", "alışveriş", "hediye çeki", "nakit puan", "bonus"],
+      "description": "Kart kullanımı ile ilgili puan, indirim ve avantaj kampanyaları."
+    },
+    {
+      "id": "yeni_musteri",
+      "name": "Yeni Müşteri Kampanyası",
+      "keywords": ["yeni müşteri", "hoş geldin", "ilk kez", "hesap açma", "yeni hesap"],
+      "description": "Yeni müşteri kazanımına yönelik kampanyalar."
+    },
+    {
+      "id": "yatirim_urunu",
+      "name": "Yatırım Ürünü Kampanyası",
+      "keywords": ["yatırım", "altın", "katılım fonu", "sukuk", "kira sertifikası", "birikim"],
+      "description": "Yatırım ve birikim ürünlerine yönelik kampanyalar."
+    }
+  ],
+  "currency_patterns": {
+    "TRY": ["TL", "Türk Lirası", "₺", "lira"],
+    "USD": ["$", "Dolar", "ABD Doları", "USD"],
+    "EUR": ["€", "Euro", "EUR"],
+    "GBP": ["£", "Sterlin", "İngiliz Sterlini", "GBP"],
+    "GR_ALTIN": ["gram altın", "gr altın", "gr. altın"]
+  },
+  "rate_patterns": [
+    "%{value}",
+    "% {value}",
+    "{value}%",
+    "{value} %",
+    "yüzde {value}"
+  ]
+}
