@@ -20,7 +20,7 @@ Bu kılavuz, projenin on-premise (yerel) ortamda kurulması, yapılandırılmas�
 
 ```bash
 git clone <depo_url>
-cd Teknofest
+cd katilim-bankaciligi-kampanya-analizi
 ```
 
 ### 2. Sanal Ortam Oluşturun ve Aktifleştirin

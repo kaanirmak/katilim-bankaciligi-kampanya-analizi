@@ -11,7 +11,7 @@ Katılım bankacılığına ait yapılandırılmamış kampanya metinlerini NLP 
 ## 📁 Proje Yapısı
 
 ```
-Teknofest/
+katilim-bankaciligi-kampanya-analizi/
 ├── scraper/                 # Katman 1: Veri Toplama (Web Scraping)
 │   ├── bddk_scraper.py      # BDDK banka listesi çekme
 │   ├── campaign_scraper.py  # Kampanya metinleri scraping
@@ -58,8 +58,8 @@ Teknofest/
 
 ### 1. Depoyu klonla
 ```bash
-git clone https://github.com/<username>/Teknofest.git
-cd Teknofest
+git clone https://github.com/<username>/katilim-bankaciligi-kampanya-analizi.git
+cd katilim-bankaciligi-kampanya-analizi
 ```
 
 ### 2. Sanal ortam oluştur
